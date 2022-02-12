@@ -22,11 +22,11 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tanach_question1);
-        question=findViewById(R.id.question1);
-        answer1=findViewById(R.id.answer1_1);
-        answer2=findViewById(R.id.answer1_2);
-        answer3=findViewById(R.id.answer1_3);
-        answer4=findViewById(R.id.answer1_4);
+        question=findViewById(R.id.question1_1);
+        answer1=findViewById(R.id.answer1_1_1);
+        answer2=findViewById(R.id.answer1_1_2);
+        answer3=findViewById(R.id.answer1_1_3);
+        answer4=findViewById(R.id.answer1_1_4);
         answer1.setOnClickListener(this);
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);

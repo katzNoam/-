@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/question2"
+        android:id="@+id/question1_2"
         android:layout_width="310dp"
         android:layout_height="72dp"
         android:text="מי היה אבא של ישעיהו?"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.137" />
 
     <Button
-        android:id="@+id/answer2.1"
+        android:id="@+id/answer1.2.1"
         android:layout_width="336dp"
         android:layout_height="59dp"
         android:text="אמציה"
@@ -33,7 +33,7 @@
         app:layout_constraintVertical_bias="0.379" />
 
     <Button
-        android:id="@+id/answer2.4"
+        android:id="@+id/answer1.2.4"
         android:layout_width="336dp"
         android:layout_height="59dp"
         android:text="חזקיהו"
@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.857" />
 
     <Button
-        android:id="@+id/answer2.3"
+        android:id="@+id/answer1.2.3"
         android:layout_width="336dp"
         android:layout_height="59dp"
         android:text="אמוץ"
@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.697" />
 
     <Button
-        android:id="@+id/answer2.2"
+        android:id="@+id/answer1.2.2"
         android:layout_width="336dp"
         android:layout_height="59dp"
         android:text="ירמיהו"
