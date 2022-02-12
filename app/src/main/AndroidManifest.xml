@@ -24,6 +24,9 @@
         <activity android:name=".TanachQuestion2Activity">
 
         </activity>
+        <activity android:name=".TanachQuestion3Activity">
+
+        </activity>
     </application>
 
 </manifest>
