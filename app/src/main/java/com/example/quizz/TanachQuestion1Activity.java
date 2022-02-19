@@ -31,7 +31,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
-        i=(int)(Math.random()*5)+1;
+        i=(int)(Math.random()*8)+1;
         switch(i)
         {
             case 1:
@@ -73,6 +73,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer3.setText(Question.answer5_3.getAnswer());
                 answer4.setText(Question.answer5_4.getAnswer());
                 break;
+
+            case 6:
+                question.setText(Question.question6);
+                answer1.setText(Question.answer6_1.getAnswer());
+                answer2.setText(Question.answer6_2.getAnswer());
+                answer3.setText(Question.answer6_3.getAnswer());
+                answer4.setText(Question.answer6_4.getAnswer());
+                break;
+
+            case 7:
+                question.setText(Question.question7);
+                answer1.setText(Question.answer7_1.getAnswer());
+                answer2.setText(Question.answer7_2.getAnswer());
+                answer3.setText(Question.answer7_3.getAnswer());
+                answer4.setText(Question.answer7_4.getAnswer());
+                break;
+
+            case 8:
+                question.setText(Question.question8);
+                answer1.setText(Question.answer8_1.getAnswer());
+                answer2.setText(Question.answer8_2.getAnswer());
+                answer3.setText(Question.answer8_3.getAnswer());
+                answer4.setText(Question.answer8_4.getAnswer());
+                break;
         }
     }
 
@@ -82,6 +106,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         switch(i)
         {
             case 1:
+
+            case 6:
                 if(answer2==v||answer3==v||answer4==v)
                 {
                     Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
@@ -95,6 +121,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 break;
 
             case 2:
+
+            case 7:
                 if(answer1==v||answer3==v||answer4==v)
                 {
                     Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
@@ -108,6 +136,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 break;
 
             case 3:
+
+            case 8:
                 if(answer1==v||answer2==v||answer3==v)
                 {
                     Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();

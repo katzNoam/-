@@ -7,9 +7,9 @@ public class Question
     public static String question3="איך ה' כינה את יחזקאל?";
     public static String question4="איך קראו לחותן משה?";
     public static String question5="איך קראו למלך יהודה האחרון?";
-    public static String question6="";
-    public static String question7="";
-    public static String question8="";
+    public static String question6="מה היה הכינוי של שמואל?";
+    public static String question7="כמה נשים היו לשלמה?";
+    public static String question8="איזה מלך משל על 120 מדינות?";
     public static String question9="";
     public static String question10="";
     public static String question11="";
@@ -44,16 +44,38 @@ public class Question
     public static Answer answer5_3=new Answer("גדליה",true);
     public static Answer answer5_4=new Answer("יהויכין",false);
 
-    public static Answer answer6_1=new Answer("",false);
-    public static Answer answer6_2=new Answer("",false);
-    public static Answer answer6_3=new Answer("",false);
-    public static Answer answer6_4=new Answer("",false);
+    public static Answer answer6_1=new Answer("הרואה",true);
+    public static Answer answer6_2=new Answer("השומע",false);
+    public static Answer answer6_3=new Answer("המתנבא",false);
+    public static Answer answer6_4=new Answer("המאזין",false);
 
-    public static Answer answer7_1=new Answer("",false);
-    public static Answer answer7_2=new Answer("",false);
-    public static Answer answer7_3=new Answer("",false);
-    public static Answer answer7_4=new Answer("",false);
+    public static Answer answer7_1=new Answer("עשר",false);
+    public static Answer answer7_2=new Answer("אלף",true);
+    public static Answer answer7_3=new Answer("מאה",false);
+    public static Answer answer7_4=new Answer("אחת",false);
 
+    public static Answer answer8_1=new Answer("אחשורוש",false);
+    public static Answer answer8_2=new Answer("אחאב",true);
+    public static Answer answer8_3=new Answer("כורש",false);
+    public static Answer answer8_4=new Answer("דריוש",true);
+
+    public static Answer answer9_1=new Answer("",false);
+    public static Answer answer9_2=new Answer("",true);
+    public static Answer answer9_3=new Answer("",false);
+    public static Answer answer9_4=new Answer("",false);
+
+    public static Answer answer10_1=new Answer("",false);
+    public static Answer answer10_2=new Answer("",true);
+    public static Answer answer10_3=new Answer("",false);
+    public static Answer answer10_4=new Answer("",false);
+
+    public static Answer answer11_1=new Answer("",false);
+    public static Answer answer11_2=new Answer("",true);
+    public static Answer answer11_3=new Answer("",false);
+    public static Answer answer11_4=new Answer("",false);
+
+
+    //רק ליתר ביטחון
     public static String getQuestion1()
     {
         return question1;
