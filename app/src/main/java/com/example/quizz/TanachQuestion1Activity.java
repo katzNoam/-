@@ -15,8 +15,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
     Button answer2;
     Button answer3;
     Button answer4;
-    int i=(int)Math.random()*3+1;
-
+    int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,6 +31,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
+        i=(int)(Math.random()*5)+1;
         switch(i)
         {
             case 1:
@@ -56,6 +56,22 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer2.setText(Question.answer3_2.getAnswer());
                 answer3.setText(Question.answer3_3.getAnswer());
                 answer4.setText(Question.answer3_4.getAnswer());
+                break;
+
+            case 4:
+                question.setText(Question.question4);
+                answer1.setText(Question.answer4_1.getAnswer());
+                answer2.setText(Question.answer4_2.getAnswer());
+                answer3.setText(Question.answer4_3.getAnswer());
+                answer4.setText(Question.answer4_4.getAnswer());
+                break;
+
+            case 5:
+                question.setText(Question.question5);
+                answer1.setText(Question.answer5_1.getAnswer());
+                answer2.setText(Question.answer5_2.getAnswer());
+                answer3.setText(Question.answer5_3.getAnswer());
+                answer4.setText(Question.answer5_4.getAnswer());
                 break;
         }
     }
@@ -103,6 +119,22 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                     startActivity(intent);
                 }
                 break;
+
+            case 4:
+
+            case 5:
+                if(answer1==v||answer2==v||answer4==v)
+                {
+                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                }
+                else if(answer3==v)
+                {
+                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    startActivity(intent);
+                }
+                break;
+
         }
 
     }

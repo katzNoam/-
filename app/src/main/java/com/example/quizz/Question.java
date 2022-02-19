@@ -5,8 +5,8 @@ public class Question
     public static String question1="מי הרג את סיסרא?";
     public static String question2="מי היה אבא של ישעיהו?";
     public static String question3="איך ה' כינה את יחזקאל?";
-    public static String question4="";
-    public static String question5="";
+    public static String question4="איך קראו לחותן משה?";
+    public static String question5="איך קראו למלך יהודה האחרון?";
     public static String question6="";
     public static String question7="";
     public static String question8="";
@@ -34,15 +34,15 @@ public class Question
     public static Answer answer3_3=new Answer("עבדי",false);
     public static Answer answer3_4=new Answer("בן אדם",true);
 
-    public static Answer answer4_1=new Answer("",false);
-    public static Answer answer4_2=new Answer("",false);
-    public static Answer answer4_3=new Answer("",false);
-    public static Answer answer4_4=new Answer("",false);
+    public static Answer answer4_1=new Answer("יתרו",false);
+    public static Answer answer4_2=new Answer("חובב",false);
+    public static Answer answer4_3=new Answer("כל התשובות נכונות",true);
+    public static Answer answer4_4=new Answer("קיני",false);
 
-    public static Answer answer5_1=new Answer("",false);
-    public static Answer answer5_2=new Answer("",false);
-    public static Answer answer5_3=new Answer("",false);
-    public static Answer answer5_4=new Answer("",false);
+    public static Answer answer5_1=new Answer("צדקיהו",false);
+    public static Answer answer5_2=new Answer("יאשיהו",false);
+    public static Answer answer5_3=new Answer("גדליה",true);
+    public static Answer answer5_4=new Answer("יהויכין",false);
 
     public static Answer answer6_1=new Answer("",false);
     public static Answer answer6_2=new Answer("",false);
