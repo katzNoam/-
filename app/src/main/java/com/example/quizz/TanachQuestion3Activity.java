@@ -17,6 +17,7 @@ public class TanachQuestion3Activity extends AppCompatActivity implements View.O
     Button answer2;
     Button answer3;
     Button answer4;
+    int i=(int)Math.random()*3+1;
 
 
     @Override
@@ -33,6 +34,11 @@ public class TanachQuestion3Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
+        switch(i)
+        {
+            case 1:
+                question.setText(Question.question1);
+        }
     }
 
     @Override
