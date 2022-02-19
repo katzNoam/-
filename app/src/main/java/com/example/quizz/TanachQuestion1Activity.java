@@ -15,6 +15,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
     Button answer2;
     Button answer3;
     Button answer4;
+    int i=(int)Math.random()*3+1;
 
 
     @Override
@@ -31,20 +32,78 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
+        switch(i)
+        {
+            case 1:
+                question.setText(Question.question1);
+                answer1.setText(Question.answer1_1.getAnswer());
+                answer2.setText(Question.answer1_2.getAnswer());
+                answer3.setText(Question.answer1_3.getAnswer());
+                answer4.setText(Question.answer1_4.getAnswer());
+                break;
+
+            case 2:
+                question.setText(Question.question2);
+                answer1.setText(Question.answer2_1.getAnswer());
+                answer2.setText(Question.answer2_2.getAnswer());
+                answer3.setText(Question.answer2_3.getAnswer());
+                answer4.setText(Question.answer2_4.getAnswer());
+                break;
+
+            case 3:
+                question.setText(Question.question3);
+                answer1.setText(Question.answer3_1.getAnswer());
+                answer2.setText(Question.answer3_2.getAnswer());
+                answer3.setText(Question.answer3_3.getAnswer());
+                answer4.setText(Question.answer3_4.getAnswer());
+                break;
+        }
     }
 
     @Override
     public void onClick(View v)
     {
-        if(answer2==v||answer3==v||answer4==v)
+        switch(i)
         {
-            Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+            case 1:
+                if(answer2==v||answer3==v||answer4==v)
+                {
+                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                }
+                else if(answer1==v)
+                {
+                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    startActivity(intent);
+                }
+                break;
+
+            case 2:
+                if(answer1==v||answer3==v||answer4==v)
+                {
+                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                }
+                else if(answer2==v)
+                {
+                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    startActivity(intent);
+                }
+                break;
+
+            case 3:
+                if(answer1==v||answer2==v||answer3==v)
+                {
+                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                }
+                else if(answer4==v)
+                {
+                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    startActivity(intent);
+                }
+                break;
         }
-        else if(answer1==v)
-        {
-            Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, TanachQuestion2Activity.class);
-            startActivity(intent);
-        }
+
     }
 }

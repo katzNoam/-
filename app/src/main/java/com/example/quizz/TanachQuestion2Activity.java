@@ -45,8 +45,8 @@ public  class TanachQuestion2Activity extends AppCompatActivity implements View.
         else if(answer3==v)
         {
             Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, TanachQuestion3Activity.class);
-            startActivity(intent);
+            //Intent intent = new Intent(this, TanachQuestion3Activity.class);
+            //startActivity(intent);
         }
     }
 }
