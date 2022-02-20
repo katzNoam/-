@@ -31,7 +31,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
-        i=(int)(Math.random()*8)+1;
+        i=(int)(Math.random()*9)+1;
         switch(i)
         {
             case 1:
@@ -97,6 +97,14 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer3.setText(Question.answer8_3.getAnswer());
                 answer4.setText(Question.answer8_4.getAnswer());
                 break;
+
+            case 9:
+                question.setText(Question.question9);
+                answer1.setText(Question.answer9_1.getAnswer());
+                answer2.setText(Question.answer9_2.getAnswer());
+                answer3.setText(Question.answer9_3.getAnswer());
+                answer4.setText(Question.answer9_4.getAnswer());
+                break;
         }
     }
 
@@ -123,6 +131,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 2:
 
             case 7:
+
+            case 9:
                 if(answer1==v||answer3==v||answer4==v)
                 {
                     Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();

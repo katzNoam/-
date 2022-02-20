@@ -10,7 +10,7 @@ public class Question
     public static String question6="מה היה הכינוי של שמואל?";
     public static String question7="כמה נשים היו לשלמה?";
     public static String question8="איזה מלך משל על 120 מדינות?";
-    public static String question9="";
+    public static String question9="איפה גר ירמיהו(בתחילת הספר)?";
     public static String question10="";
     public static String question11="";
     public static String question12="";
@@ -55,14 +55,14 @@ public class Question
     public static Answer answer7_4=new Answer("אחת",false);
 
     public static Answer answer8_1=new Answer("אחשורוש",false);
-    public static Answer answer8_2=new Answer("אחאב",true);
+    public static Answer answer8_2=new Answer("אחאב",false);
     public static Answer answer8_3=new Answer("כורש",false);
     public static Answer answer8_4=new Answer("דריוש",true);
 
-    public static Answer answer9_1=new Answer("",false);
-    public static Answer answer9_2=new Answer("",true);
-    public static Answer answer9_3=new Answer("",false);
-    public static Answer answer9_4=new Answer("",false);
+    public static Answer answer9_1=new Answer("ירושלים",false);
+    public static Answer answer9_2=new Answer("ענתות",true);
+    public static Answer answer9_3=new Answer("רמה",false);
+    public static Answer answer9_4=new Answer("הר הכרמל",false);
 
     public static Answer answer10_1=new Answer("",false);
     public static Answer answer10_2=new Answer("",true);
