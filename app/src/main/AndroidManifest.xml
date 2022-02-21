@@ -21,9 +21,6 @@
         <activity android:name=".TanachQuestion1Activity">
 
         </activity>
-        <activity android:name=".TanachQuestion2Activity">
-
-        </activity>
     </application>
 
 </manifest>

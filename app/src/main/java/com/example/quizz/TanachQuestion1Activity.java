@@ -1,5 +1,6 @@
 package com.example.quizz;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,13 +10,19 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TanachQuestion1Activity extends AppCompatActivity implements View.OnClickListener {
+public class TanachQuestion1Activity extends AppCompatActivity implements View.OnClickListener
+{
+    Dialog end_dialog;
     TextView question;
     Button answer1;
     Button answer2;
     Button answer3;
     Button answer4;
     int i;
+    int count=0;
+
+    TextView message;
+    Button end;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,6 +39,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
         i=(int)(Math.random()*9)+1;
+        Intent intent=getIntent();
+        count=intent.getExtras().getInt("points");
         switch(i)
         {
             case 1:
@@ -108,6 +117,16 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         }
     }
 
+    public void createEndDialog()
+    {
+        end_dialog=new Dialog(this);
+        end_dialog.setContentView(R.layout.dialog_end);
+        message=end_dialog.findViewById(R.id.message);
+        end=end_dialog.findViewById(R.id.end);
+        end.setOnClickListener(this);
+        message.setText("יש לך "+count+" תשובות נכונות, אולי תצליח יותר בפעם הבאה!");
+    }
+
     @Override
     public void onClick(View v)
     {
@@ -118,7 +137,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 6:
                 if(answer2==v||answer3==v||answer4==v)
                 {
-                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                    createEndDialog();
                 }
                 else if(answer1==v)
                 {
@@ -135,12 +154,13 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 9:
                 if(answer1==v||answer3==v||answer4==v)
                 {
-                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                    createEndDialog();
                 }
                 else if(answer2==v)
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    intent.putExtra("points",count+1);
                     startActivity(intent);
                 }
                 break;
@@ -150,12 +170,13 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 8:
                 if(answer1==v||answer2==v||answer3==v)
                 {
-                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                    createEndDialog();
                 }
                 else if(answer4==v)
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    intent.putExtra("points",count+1);
                     startActivity(intent);
                 }
                 break;
@@ -165,16 +186,22 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 5:
                 if(answer1==v||answer2==v||answer4==v)
                 {
-                    Toast.makeText(this, "תשובה לא נכונה", Toast.LENGTH_LONG).show();
+                    createEndDialog();
                 }
                 else if(answer3==v)
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(this, TanachQuestion1Activity.class);
+                    intent.putExtra("points",count+1);
                     startActivity(intent);
                 }
                 break;
 
+        }
+        if(end==v)
+        {
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
 
     }

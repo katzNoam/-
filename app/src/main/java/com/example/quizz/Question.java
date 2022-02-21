@@ -8,7 +8,7 @@ public class Question
     public static String question4="איך קראו לחותן משה?";
     public static String question5="איך קראו למלך יהודה האחרון?";
     public static String question6="מה היה הכינוי של שמואל?";
-    public static String question7="כמה נשים היו לשלמה?";
+    public static String question7="כמה נשים ופילגשים היו לשלמה?";
     public static String question8="איזה מלך משל על 120 מדינות?";
     public static String question9="איפה גר ירמיהו(בתחילת הספר)?";
     public static String question10="";
