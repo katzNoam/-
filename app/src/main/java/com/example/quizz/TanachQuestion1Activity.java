@@ -126,6 +126,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         end=end_dialog.findViewById(R.id.end);
         end.setOnClickListener(this);
         message.setText("יש לך "+count+" תשובות נכונות, אולי תצליח יותר בפעם הבאה!");
+        end_dialog.show();
     }
 
 
