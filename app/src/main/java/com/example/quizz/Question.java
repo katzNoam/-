@@ -13,8 +13,8 @@ public class Question
     public static String question9="איפה גר ירמיהו(בתחילת הספר)?";
     public static String question10=" מי מהבאים היה נביא שקר?";
     public static String question11="מאיזה שבט היה חור?";
-    public static String question12="בן כמה ישמעאל היה במותו?";
-    public static String question13="";
+    public static String question12="בן כמה ישמעאל בן אברהם היה במותו?";
+    public static String question13="מי היה נשיא שבט שמעון שגרם למגפה?";
     public static String question14="";
     public static String question15="";
     public static String question16="";
@@ -79,10 +79,10 @@ public class Question
     public static Answer answer12_3=new Answer("147",false);
     public static Answer answer12_4=new Answer("137",true);
 
-    public static Answer answer13_1=new Answer("",false);
-    public static Answer answer13_2=new Answer("",true);
-    public static Answer answer13_3=new Answer("",false);
-    public static Answer answer13_4=new Answer("",false);
+    public static Answer answer13_1=new Answer("שפט בן חורי",false);
+    public static Answer answer13_2=new Answer("זמרי בן סלוא",true);
+    public static Answer answer13_3=new Answer("שלומיאל בן צורישדי",false);
+    public static Answer answer13_4=new Answer("אף אחד מהם",false);
 
     public static Answer answer14_1=new Answer("",false);
     public static Answer answer14_2=new Answer("",true);
