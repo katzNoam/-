@@ -8,11 +8,11 @@
 
     <TextView
         android:id="@+id/question1_1"
-        android:layout_width="310dp"
-        android:layout_height="72dp"
+        android:layout_width="334dp"
+        android:layout_height="102dp"
         android:text="מי הרג את סיסרא?"
-        android:textSize="30sp"
         android:textColor="@color/white"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.366"

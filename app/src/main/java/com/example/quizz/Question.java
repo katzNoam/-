@@ -11,9 +11,9 @@ public class Question
     public static String question7="כמה נשים ופילגשים היו לשלמה?";
     public static String question8="איזה מלך משל על 120 מדינות?";
     public static String question9="איפה גר ירמיהו(בתחילת הספר)?";
-    public static String question10="";
-    public static String question11="";
-    public static String question12="";
+    public static String question10=" מי מהבאים היה נביא שקר?";
+    public static String question11="מאיזה שבט היה חור?";
+    public static String question12="בן כמה ישמעאל היה במותו?";
     public static String question13="";
     public static String question14="";
     public static String question15="";
@@ -64,15 +64,40 @@ public class Question
     public static Answer answer9_3=new Answer("רמה",false);
     public static Answer answer9_4=new Answer("הר הכרמל",false);
 
-    public static Answer answer10_1=new Answer("",false);
-    public static Answer answer10_2=new Answer("",true);
-    public static Answer answer10_3=new Answer("",false);
-    public static Answer answer10_4=new Answer("",false);
+    public static Answer answer10_1=new Answer("חנניה בן עזור",true);
+    public static Answer answer10_2=new Answer("ירמיהו בן חלקיהו",false);
+    public static Answer answer10_3=new Answer("אוריהו בן שמעיהו",false);
+    public static Answer answer10_4=new Answer("אחיה השילוני",false);
 
-    public static Answer answer11_1=new Answer("",false);
-    public static Answer answer11_2=new Answer("",true);
-    public static Answer answer11_3=new Answer("",false);
-    public static Answer answer11_4=new Answer("",false);
+    public static Answer answer11_1=new Answer("שמעון",false);
+    public static Answer answer11_2=new Answer("דן",false);
+    public static Answer answer11_3=new Answer("יהודה",true);
+    public static Answer answer11_4=new Answer("לוי",false);
+
+    public static Answer answer12_1=new Answer("157",false);
+    public static Answer answer12_2=new Answer("127",false);
+    public static Answer answer12_3=new Answer("147",false);
+    public static Answer answer12_4=new Answer("137",true);
+
+    public static Answer answer13_1=new Answer("",false);
+    public static Answer answer13_2=new Answer("",true);
+    public static Answer answer13_3=new Answer("",false);
+    public static Answer answer13_4=new Answer("",false);
+
+    public static Answer answer14_1=new Answer("",false);
+    public static Answer answer14_2=new Answer("",true);
+    public static Answer answer14_3=new Answer("",false);
+    public static Answer answer14_4=new Answer("",false);
+
+    public static Answer answer15_1=new Answer("",false);
+    public static Answer answer15_2=new Answer("",true);
+    public static Answer answer15_3=new Answer("",false);
+    public static Answer answer15_4=new Answer("",false);
+
+    public static Answer answer16_1=new Answer("",false);
+    public static Answer answer16_2=new Answer("",true);
+    public static Answer answer16_3=new Answer("",false);
+    public static Answer answer16_4=new Answer("",false);
 
 
     //רק ליתר ביטחון
@@ -296,4 +321,6 @@ public class Question
     {
         return answer7_4;
     }
+
+
 }

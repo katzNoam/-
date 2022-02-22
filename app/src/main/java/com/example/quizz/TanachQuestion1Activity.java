@@ -41,7 +41,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         answer2.setOnClickListener(this);
         answer3.setOnClickListener(this);
         answer4.setOnClickListener(this);
-        i=(int)(Math.random()*9)+1;
+        i=(int)(Math.random()*12)+1;
         switch(i)
         {
             case 1:
@@ -115,6 +115,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer3.setText(Question.answer9_3.getAnswer());
                 answer4.setText(Question.answer9_4.getAnswer());
                 break;
+
+            case 10:
+                question.setText(Question.question10);
+                answer1.setText(Question.answer10_1.getAnswer());
+                answer2.setText(Question.answer10_2.getAnswer());
+                answer3.setText(Question.answer10_3.getAnswer());
+                answer4.setText(Question.answer10_4.getAnswer());
+                break;
+
+            case 11:
+                question.setText(Question.question11);
+                answer1.setText(Question.answer11_1.getAnswer());
+                answer2.setText(Question.answer11_2.getAnswer());
+                answer3.setText(Question.answer11_3.getAnswer());
+                answer4.setText(Question.answer11_4.getAnswer());
+                break;
+
+            case 12:
+                question.setText(Question.question12);
+                answer1.setText(Question.answer12_1.getAnswer());
+                answer2.setText(Question.answer12_2.getAnswer());
+                answer3.setText(Question.answer12_3.getAnswer());
+                answer4.setText(Question.answer12_4.getAnswer());
+                break;
         }
     }
 
@@ -157,6 +181,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 1:
 
             case 6:
+
+            case 10:
                 if(answer2==v||answer3==v||answer4==v)
                 {
                     createEndDialog();
@@ -165,7 +191,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
-                    i=(int)(Math.random()*9)+1;
+                    i=(int)(Math.random()*11)+1;
                     switch(i)
                     {
                         case 1:
@@ -238,6 +264,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                             answer2.setText(Question.answer9_2.getAnswer());
                             answer3.setText(Question.answer9_3.getAnswer());
                             answer4.setText(Question.answer9_4.getAnswer());
+                            break;
+
+                        case 10:
+                            question.setText(Question.question10);
+                            answer1.setText(Question.answer10_1.getAnswer());
+                            answer2.setText(Question.answer10_2.getAnswer());
+                            answer3.setText(Question.answer10_3.getAnswer());
+                            answer4.setText(Question.answer10_4.getAnswer());
+                            break;
+
+                        case 11:
+                            question.setText(Question.question11);
+                            answer1.setText(Question.answer11_1.getAnswer());
+                            answer2.setText(Question.answer11_2.getAnswer());
+                            answer3.setText(Question.answer11_3.getAnswer());
+                            answer4.setText(Question.answer11_4.getAnswer());
+                            break;
+
+                        case 12:
+                            question.setText(Question.question12);
+                            answer1.setText(Question.answer12_1.getAnswer());
+                            answer2.setText(Question.answer12_2.getAnswer());
+                            answer3.setText(Question.answer12_3.getAnswer());
+                            answer4.setText(Question.answer12_4.getAnswer());
                             break;
                     }
                 }
@@ -256,7 +306,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
-                    i=(int)(Math.random()*9)+1;
+                    i=(int)(Math.random()*11)+1;
                     switch(i)
                     {
                         case 1:
@@ -329,6 +379,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                             answer2.setText(Question.answer9_2.getAnswer());
                             answer3.setText(Question.answer9_3.getAnswer());
                             answer4.setText(Question.answer9_4.getAnswer());
+                            break;
+
+                        case 10:
+                            question.setText(Question.question10);
+                            answer1.setText(Question.answer10_1.getAnswer());
+                            answer2.setText(Question.answer10_2.getAnswer());
+                            answer3.setText(Question.answer10_3.getAnswer());
+                            answer4.setText(Question.answer10_4.getAnswer());
+                            break;
+
+                        case 11:
+                            question.setText(Question.question11);
+                            answer1.setText(Question.answer11_1.getAnswer());
+                            answer2.setText(Question.answer11_2.getAnswer());
+                            answer3.setText(Question.answer11_3.getAnswer());
+                            answer4.setText(Question.answer11_4.getAnswer());
+                            break;
+
+                        case 12:
+                            question.setText(Question.question12);
+                            answer1.setText(Question.answer12_1.getAnswer());
+                            answer2.setText(Question.answer12_2.getAnswer());
+                            answer3.setText(Question.answer12_3.getAnswer());
+                            answer4.setText(Question.answer12_4.getAnswer());
                             break;
                     }
                 }
@@ -337,6 +411,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 3:
 
             case 8:
+
+            case 12:
                 if(answer1==v||answer2==v||answer3==v)
                 {
                     createEndDialog();
@@ -345,7 +421,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
-                    i=(int)(Math.random()*9)+1;
+                    i=(int)(Math.random()*11)+1;
                     switch(i)
                     {
                         case 1:
@@ -418,6 +494,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                             answer2.setText(Question.answer9_2.getAnswer());
                             answer3.setText(Question.answer9_3.getAnswer());
                             answer4.setText(Question.answer9_4.getAnswer());
+                            break;
+
+                        case 10:
+                            question.setText(Question.question10);
+                            answer1.setText(Question.answer10_1.getAnswer());
+                            answer2.setText(Question.answer10_2.getAnswer());
+                            answer3.setText(Question.answer10_3.getAnswer());
+                            answer4.setText(Question.answer10_4.getAnswer());
+                            break;
+
+                        case 11:
+                            question.setText(Question.question11);
+                            answer1.setText(Question.answer11_1.getAnswer());
+                            answer2.setText(Question.answer11_2.getAnswer());
+                            answer3.setText(Question.answer11_3.getAnswer());
+                            answer4.setText(Question.answer11_4.getAnswer());
+                            break;
+
+                        case 12:
+                            question.setText(Question.question12);
+                            answer1.setText(Question.answer12_1.getAnswer());
+                            answer2.setText(Question.answer12_2.getAnswer());
+                            answer3.setText(Question.answer12_3.getAnswer());
+                            answer4.setText(Question.answer12_4.getAnswer());
                             break;
                     }
                 }
@@ -426,6 +526,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 4:
 
             case 5:
+
+            case 11:
                 if(answer1==v||answer2==v||answer4==v)
                 {
                     createEndDialog();
@@ -434,7 +536,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
-                    i=(int)(Math.random()*9)+1;
+                    i=(int)(Math.random()*11)+1;
                     switch(i)
                     {
                         case 1:
@@ -507,6 +609,30 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                             answer2.setText(Question.answer9_2.getAnswer());
                             answer3.setText(Question.answer9_3.getAnswer());
                             answer4.setText(Question.answer9_4.getAnswer());
+                            break;
+
+                        case 10:
+                            question.setText(Question.question10);
+                            answer1.setText(Question.answer10_1.getAnswer());
+                            answer2.setText(Question.answer10_2.getAnswer());
+                            answer3.setText(Question.answer10_3.getAnswer());
+                            answer4.setText(Question.answer10_4.getAnswer());
+                            break;
+
+                        case 11:
+                            question.setText(Question.question11);
+                            answer1.setText(Question.answer11_1.getAnswer());
+                            answer2.setText(Question.answer11_2.getAnswer());
+                            answer3.setText(Question.answer11_3.getAnswer());
+                            answer4.setText(Question.answer11_4.getAnswer());
+                            break;
+
+                        case 12:
+                            question.setText(Question.question12);
+                            answer1.setText(Question.answer12_1.getAnswer());
+                            answer2.setText(Question.answer12_2.getAnswer());
+                            answer3.setText(Question.answer12_3.getAnswer());
+                            answer4.setText(Question.answer12_4.getAnswer());
                             break;
                     }
                 }
