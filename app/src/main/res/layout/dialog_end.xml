@@ -8,22 +8,22 @@
 
     <TextView
         android:id="@+id/message"
-        android:layout_width="362dp"
-        android:layout_height="216dp"
+        android:layout_width="258dp"
+        android:layout_height="221dp"
         android:text='כל הכבוד! תצליח יותר בפעם הבאה בעז"ה'
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.288" />
 
     <Button
         android:id="@+id/end"
-        android:layout_width="214dp"
-        android:layout_height="126dp"
+        android:layout_width="186dp"
+        android:layout_height="106dp"
         android:text="סגור"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
