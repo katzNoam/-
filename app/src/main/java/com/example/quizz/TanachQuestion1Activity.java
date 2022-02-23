@@ -22,6 +22,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
     Button answer3;
     Button answer4;
     int i;
+    int j;
     int count=0;
 
     TextView message;
@@ -205,7 +206,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
+                    j=i;
                     i=(int)(Math.random()*13)+1;
+                    while(j==i)
+                        i=(int)(Math.random()*13)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -225,7 +229,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
+                    j=i;
                     i=(int)(Math.random()*13)+1;
+                    while(j==i)
+                        i=(int)(Math.random()*13)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -243,7 +250,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
+                    j=i;
                     i=(int)(Math.random()*13)+1;
+                    while(j==i)
+                        i=(int)(Math.random()*13)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -261,7 +271,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 {
                     Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
+                    j=i;
                     i=(int)(Math.random()*13)+1;
+                    while(j==i)
+                        i=(int)(Math.random()*13)+1;
                     replaceQuestion(i);
                 }
                 break;
