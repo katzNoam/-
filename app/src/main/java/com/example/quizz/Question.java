@@ -16,7 +16,7 @@ public class Question
     public static String question12="בן כמה ישמעאל בן אברהם היה במותו?";
     public static String question13="מי היה נשיא שבט שמעון שגרם למגפה?";
     public static String question14="השלם:'הגם ____ בנביאים'";
-    public static String question15="";
+    public static String question15="מי מהבאים מת עיוור?";
     public static String question16="";
 
     public static Answer answer1_1=new Answer("יעל אשת חבר הקיני",true);
@@ -89,10 +89,10 @@ public class Question
     public static Answer answer14_3=new Answer("שלמה",false);
     public static Answer answer14_4=new Answer("רחבעם",false);
 
-    public static Answer answer15_1=new Answer("",false);
-    public static Answer answer15_2=new Answer("",true);
-    public static Answer answer15_3=new Answer("",false);
-    public static Answer answer15_4=new Answer("",false);
+    public static Answer answer15_1=new Answer("יעקב",false);
+    public static Answer answer15_2=new Answer("צדקיהו",false);
+    public static Answer answer15_3=new Answer("שני התשובות נכונות",true);
+    public static Answer answer15_4=new Answer("אף אחד מהתשובות נכונה",false);
 
     public static Answer answer16_1=new Answer("",false);
     public static Answer answer16_2=new Answer("",true);

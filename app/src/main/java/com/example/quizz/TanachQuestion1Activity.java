@@ -192,6 +192,14 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer3.setText(Question.answer14_3.getAnswer());
                 answer4.setText(Question.answer14_4.getAnswer());
                 break;
+
+            case 15:
+                question.setText(Question.question15);
+                answer1.setText(Question.answer15_1.getAnswer());
+                answer2.setText(Question.answer15_2.getAnswer());
+                answer3.setText(Question.answer15_3.getAnswer());
+                answer4.setText(Question.answer15_4.getAnswer());
+                break;
         }
     }
 
@@ -216,7 +224,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                     count++;
                     j=i;
                     while(j==i)
-                        i=(int)(Math.random()*14)+1;
+                        i=(int)(Math.random()*15)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -237,7 +245,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                     count++;
                     j=i;
                     while(j==i)
-                        i=(int)(Math.random()*14)+1;
+                        i=(int)(Math.random()*15)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -256,7 +264,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                     count++;
                     j=i;
                     while(j==i)
-                        i=(int)(Math.random()*14)+1;
+                        i=(int)(Math.random()*15)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -266,6 +274,8 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 5:
 
             case 11:
+
+            case 15:
                 if(answer1==v||answer2==v||answer4==v)
                 {
                     createEndDialog();
@@ -275,7 +285,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                     count++;
                     j=i;
                     while(j==i)
-                        i=(int)(Math.random()*14)+1;
+                        i=(int)(Math.random()*15)+1;
                     replaceQuestion(i);
                 }
                 break;
