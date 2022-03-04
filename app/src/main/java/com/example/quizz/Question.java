@@ -15,7 +15,7 @@ public class Question
     public static String question11="מאיזה שבט היה חור?";
     public static String question12="בן כמה ישמעאל בן אברהם היה במותו?";
     public static String question13="מי היה נשיא שבט שמעון שגרם למגפה?";
-    public static String question14="";
+    public static String question14="השלם:'הגם ____ בנביאים'";
     public static String question15="";
     public static String question16="";
 
@@ -84,10 +84,10 @@ public class Question
     public static Answer answer13_3=new Answer("שלומיאל בן צורישדי",false);
     public static Answer answer13_4=new Answer("אף אחד מהם",false);
 
-    public static Answer answer14_1=new Answer("",false);
-    public static Answer answer14_2=new Answer("",true);
-    public static Answer answer14_3=new Answer("",false);
-    public static Answer answer14_4=new Answer("",false);
+    public static Answer answer14_1=new Answer("שאול",true);
+    public static Answer answer14_2=new Answer("דוד",false);
+    public static Answer answer14_3=new Answer("שלמה",false);
+    public static Answer answer14_4=new Answer("רחבעם",false);
 
     public static Answer answer15_1=new Answer("",false);
     public static Answer answer15_2=new Answer("",true);

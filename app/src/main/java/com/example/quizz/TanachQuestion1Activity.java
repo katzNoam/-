@@ -72,8 +72,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         int id=item.getItemId();
         if(id==R.id.nenu_return)
         {
-            Intent intent=new Intent(this,MainActivity.class);
-            startActivity(intent);
+            finish();
         }
         return true;
     }
@@ -185,6 +184,14 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 answer3.setText(Question.answer13_3.getAnswer());
                 answer4.setText(Question.answer13_4.getAnswer());
                 break;
+
+            case 14:
+                question.setText(Question.question14);
+                answer1.setText(Question.answer14_1.getAnswer());
+                answer2.setText(Question.answer14_2.getAnswer());
+                answer3.setText(Question.answer14_3.getAnswer());
+                answer4.setText(Question.answer14_4.getAnswer());
+                break;
         }
     }
 
@@ -198,18 +205,18 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
             case 6:
 
             case 10:
+
+            case 14:
                 if(answer2==v||answer3==v||answer4==v)
                 {
                     createEndDialog();
                 }
                 else if(answer1==v)
                 {
-                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
                     j=i;
-                    i=(int)(Math.random()*13)+1;
                     while(j==i)
-                        i=(int)(Math.random()*13)+1;
+                        i=(int)(Math.random()*14)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -227,12 +234,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 }
                 else if(answer2==v)
                 {
-                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
                     j=i;
-                    i=(int)(Math.random()*13)+1;
                     while(j==i)
-                        i=(int)(Math.random()*13)+1;
+                        i=(int)(Math.random()*14)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -248,12 +253,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 }
                 else if(answer4==v)
                 {
-                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
                     j=i;
-                    i=(int)(Math.random()*13)+1;
                     while(j==i)
-                        i=(int)(Math.random()*13)+1;
+                        i=(int)(Math.random()*14)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -269,12 +272,10 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
                 }
                 else if(answer3==v)
                 {
-                    Toast.makeText(this, "תשובה נכונה - כל הכבוד!", Toast.LENGTH_LONG).show();
                     count++;
                     j=i;
-                    i=(int)(Math.random()*13)+1;
                     while(j==i)
-                        i=(int)(Math.random()*13)+1;
+                        i=(int)(Math.random()*14)+1;
                     replaceQuestion(i);
                 }
                 break;
@@ -282,8 +283,7 @@ public class TanachQuestion1Activity extends AppCompatActivity implements View.O
         }
         if(end==v)
         {
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            finish();
         }
 
     }
